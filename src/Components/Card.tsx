@@ -1,28 +1,32 @@
 import styled from 'styled-components'
-import girlPick from '../public/firstGogo.svg'
-import replyPick from '../public/replyArrow.svg'
+import { Info } from './Cardinfo'
+
 
 const Card = () => {
-  return (
-    <Mshobelidivi>
-        <Cardheaderdiv>
-        <Headerimg src={girlPick}></Headerimg>
-        <Headername>amyrobson</Headername>
-        <Headertime>1 month ago</Headertime>
-        </Cardheaderdiv>
-        <Commentp>Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You’ve nailed the design and the responsiveness at various breakpoints works really well.</Commentp>
-        <Counters>
-            <Counterhtwo>+</Counterhtwo>
-            <Counterhthre>12</Counterhthre>
-            <Counterfour>-</Counterfour>
-        </Counters>
-        <Replyd>
-          <Replyimg src={replyPick}></Replyimg>
-          <Replytxt>Reply</Replytxt>
-        </Replyd>
-    </Mshobelidivi>
-  )
-}
+    return (
+      <>
+        {Info.map((x:any, i:any) => (
+          <Mshobelidivi key={i}>
+            <Cardheaderdiv>
+              <Headerimg src={x.headerImgUrl} />
+              <Headername>{x.headerName}</Headername>
+              <Headertime>{x.timeAgo}</Headertime>
+            </Cardheaderdiv>
+            <Commentp>{x.piInfo}</Commentp>
+            <Counters>
+              <Counterhtwo>{x.plius}</Counterhtwo>
+              <Counterhthre>{x.num}</Counterhthre>
+              <Counterfour>{x.minus}</Counterfour>
+            </Counters>
+            <Replyd>
+              <Replyimg src={x.replyImg} />
+              <Replytxt>{x.replyTxt}</Replytxt>
+            </Replyd>
+          </Mshobelidivi>
+        ))}
+      </>
+    );
+  };
 
 export default Card
 
@@ -88,7 +92,6 @@ column-gap: 13px;
 margin-top: 10px;
 margin-left: -210px;
 `
-
 const Counterhtwo = styled.h2`
 font-size: 18px;
 color:#C5C6EF;
@@ -103,13 +106,11 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 `
-
 const Counterfour = styled.h4`
 font-size: 18px;
 color:#C5C6EF;
 cursor: pointer;
 `
-
 const Replyd = styled.div `
     display: flex;
     justify-content: center;
