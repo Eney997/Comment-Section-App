@@ -38,6 +38,12 @@ const Mshobelidivi = styled.div`
     width: 343px;
     height: 256px;
     border-radius: 8px;
+
+    @media (width>750px){
+        width: 730px;
+        height: 167px;
+        margin-top: 50px;
+    }
 `
 const Cardheaderdiv = styled.div `
     display:flex;
@@ -45,6 +51,10 @@ const Cardheaderdiv = styled.div `
     align-items: center;
     column-gap: 16px;
     margin-top: 16px;
+
+    @media (width>750px){
+        margin-left: -250px;
+    }
 `
 const Headerimg = styled.img `
     margin-left: -70px;
@@ -78,6 +88,11 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 24px; 
+
+@media (width>750px){
+    width: 618px;
+    margin-left: 50px;
+}
 `
 const Counters = styled.div `
 display:flex;
@@ -91,11 +106,23 @@ background:#F5F6FA;
 column-gap: 13px;
 margin-top: 10px;
 margin-left: -210px;
+
+@media (width>750px){
+    display: grid;
+    width: 40px;
+    height: 100px;
+    margin-left: -650px;
+    margin-top: -140px;
+}
 `
 const Counterhtwo = styled.h2`
 font-size: 18px;
 color:#C5C6EF;
 cursor: pointer;
+
+@media (width>750px){
+    margin-left: 2px;
+}
 `
 const Counterhthre = styled.h3`
 color:  #5357B6;
@@ -105,11 +132,19 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+
+@media (width>750px){
+    margin-left: -1px;
+}
 `
 const Counterfour = styled.h4`
 font-size: 18px;
 color:#C5C6EF;
 cursor: pointer;
+
+@media (width>750px){
+    margin-left: 4px;
+}
 `
 const Replyd = styled.div `
     display: flex;
@@ -119,6 +154,11 @@ const Replyd = styled.div `
     margin-left: 200px;
     margin-top: -58px;
     cursor: pointer;
+
+    @media (width>750px){
+    margin-left: 600px;
+    margin-top: -255px;
+}
 `
 const Replyimg = styled.img `
     display: block;
