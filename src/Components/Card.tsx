@@ -1,8 +1,24 @@
 import styled from 'styled-components'
 import { Info } from './Cardinfo'
+import { useState } from 'react'; 
 
 
 const Card = () => {
+    const [counts, setCounts] = useState(Info.map(() => 0));
+
+    const increaseCount = (index:number) => {
+      const newCounts = [...counts];
+      newCounts[index] += 1;
+      setCounts(newCounts);
+    };
+  
+    const decreaseCount = (index:number) => {
+      const newCounts = [...counts];
+      if (newCounts[index] > 0) {
+        newCounts[index] -= 1;
+        setCounts(newCounts);
+      }
+    };
     return (
       <>
         {Info.map((x:any, i:any) => (
@@ -14,10 +30,10 @@ const Card = () => {
             </Cardheaderdiv>
             <Commentp>{x.piInfo}</Commentp>
             <Counters>
-              <Counterhtwo>{x.plius}</Counterhtwo>
-              <Counterhthre>{x.num}</Counterhthre>
-              <Counterfour>{x.minus}</Counterfour>
-            </Counters>
+            <Counterhtwo onClick={() => increaseCount(i)}>{x.plius}</Counterhtwo>
+            <Counterhthre>{counts[i]}</Counterhthre>
+            <Counterfour onClick={() => decreaseCount(i)}>{x.minus}</Counterfour>
+          </Counters>
             <Replyd>
               <Replyimg src={x.replyImg} />
               <Replytxt>{x.replyTxt}</Replytxt>
