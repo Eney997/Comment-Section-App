@@ -2,6 +2,7 @@ import gogoPick from '../public/firstGogo.svg'
 import secBoy from '../public/secondBoy.svg'
 import thirdBoy from '../public/thirdBoy.svg'
 import arrow from '../public/replyArrow.svg'
+//magaria bzshy
 export const Info = [
     {
       key:1,
