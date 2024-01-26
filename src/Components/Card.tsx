@@ -176,12 +176,9 @@ const Replyd = styled.div `
     margin-top: -90px;
     cursor: pointer;
     
-
-
     @media (width>750px){
     margin-left: 600px;
     margin-top: -260px;
-    position: ;
 }
 `
 const Replyimg = styled.img `
