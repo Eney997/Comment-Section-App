@@ -1,14 +1,14 @@
 export const Info = [
     {
       key:1,
-      headerImgUrl: './src/public/firstGogo.svg',
+      headerImgUrl: '../src/public/firstGogo.svg',
       headerName:'amyrobson',
       timeAgo:'1 month ago',
       piInfo:'Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You’ve nailed the design and the responsiveness at various breakpoints works really well.',
       plius:'+',
       num:'12',
       minus:'-',
-      replyImg:'./src/public/replyArrow.svg',
+      replyImg:'/public/replyArrow.svg',
       replyTxt:'Reply',
     },
     {
