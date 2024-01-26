@@ -28,7 +28,7 @@ export const Info = [
         headerImgUrl: '/src/public/thirdBoy.svg',
         headerName:'ramsesmiron',
         timeAgo:'1 week ago',
-        piInfo:'@maxblagun If you’re still new, I’d recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It’s very tempting to jump ahead but lay a solid foundation first.',
+        piInfo:'If you’re still new, I’d recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It’s very tempting to jump ahead but lay a solid foundation first.',
         plius:'+',
         num:'4',
         minus:'-',

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Info } from './Cardinfo'
 import { useState } from 'react'; 
-
+import Commentinput from './Commentinput';
 
 const Card = () => {
     const [counts, setCounts] = useState(Info.map(() => 0));
@@ -40,6 +40,7 @@ const Card = () => {
             </Replyd>
           </Mshobelidivi>
         ))}
+        <Commentinput/>
       </>
     );
   };
