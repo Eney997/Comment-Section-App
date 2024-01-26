@@ -3,6 +3,7 @@ import { Info } from './Cardinfo'
 import { useState } from 'react'; 
 import Commentinput from './Commentinput';
 
+
 const Card = () => {
     const [counts, setCounts] = useState(Info.map(() => 0));
 
