@@ -54,12 +54,12 @@ const Mshobelidivi = styled.div`
     background-color: #fff;
     margin-top: 16px;
     width: 343px;
-    height: 256px;
+    height: 100%;
     border-radius: 8px;
 
     @media (width>750px){
         width: 730px;
-        height: 167px;
+        height: 100%;
         margin-top: 50px;
     }
 `
@@ -110,6 +110,7 @@ line-height: 24px;
 @media (width>750px){
     width: 618px;
     margin-left: 50px;
+    margin-bottom: 30px;
 }
 `
 const Counters = styled.div `
@@ -124,13 +125,15 @@ background:#F5F6FA;
 column-gap: 13px;
 margin-top: 10px;
 margin-left: -210px;
+margin-bottom: 20px;
 
 @media (width>750px){
     display: grid;
     width: 40px;
     height: 100px;
     margin-left: -650px;
-    margin-top: -140px;
+    margin-top: 0px;
+    position: absolute;
 }
 `
 const Counterhtwo = styled.h2`
@@ -170,12 +173,15 @@ const Replyd = styled.div `
     align-items: center;
     column-gap: 8px;
     margin-left: 200px;
-    margin-top: -58px;
+    margin-top: -90px;
     cursor: pointer;
+    
+
 
     @media (width>750px){
     margin-left: 600px;
-    margin-top: -255px;
+    margin-top: -260px;
+    position: ;
 }
 `
 const Replyimg = styled.img `
